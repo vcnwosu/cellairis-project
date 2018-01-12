@@ -9,6 +9,9 @@ define('com\vnwosu\cellairis\VIEW', SERV . 'views/');
 define('com\vnwosu\cellairis\MODL', SERV . 'models/');
 define('com\vnwosu\cellairis\TMPL', SERV . 'templates/');
 
+// easier access to namespace functions
+define('com\vnwosu\cellairis\FUNC', __NAMESPACE__ . '\functions');
+
 // page request error
 define('com\vnwosu\cellairis\ERROR404', CTRL . 'error404.php');
 

@@ -6,18 +6,12 @@ new class {
 
     public function __construct() {
 
-        // reference functions.php
-        $_ = 'create_ul';
-
-        // navigation can be made to dynamically change
-        // depending on the client accessing the site at
-        // the time, so a model to handle that state
-        require_once MODL . 'navigation.php';
-
+        // no user input to process for this current
+        // example, so simply display the associated view
         require_once VIEW . 'landing-page.php';
 
     }
 
-}
+};
 
 ?>

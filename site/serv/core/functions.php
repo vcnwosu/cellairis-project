@@ -12,11 +12,32 @@ namespace com\vnwosu\cellairis\functions;
  *
  * returns: HTML: string
  */
-function generate_html($elem, $list): string {
+function generate_html(string $elem, array $list): string {
 
-    $html = '';
+    $el = [
+        'nav' => 'ul',
+        'scripts' => 'script',
+    ];
 
-    // TODO: implement HTML generation code
+    $html = isset($el[$elem]) ? "<{$el[$elem]}>" : '';
+
+    foreach($list as $k => $v) {
+
+        switch($elem) {
+            case 'nav':
+                $html .= "<li><a href=\"{$v}\">{$k}</a></li>";
+                break;
+            case 'scripts':
+                $html .= "<script src=\"{$v}\"></script>";
+                break;
+            case 'styles':
+                $html .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"{$v}\"/>";
+                break;
+        }
+
+    }
+
+    $html .= isset($el[$elem]) ? "</{$el[$elem]}>" : '';
 
     return $html;
 

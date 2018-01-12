@@ -2,11 +2,11 @@
 
 namespace com\vnwosu\cellairis;
 
-new class($_) extends View {
+new class extends View {
 
-    public function __construct($_) {
+    public function __construct() {
 
-        $this->html($_);
+        $this->html();
 
     }
 

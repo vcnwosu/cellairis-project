@@ -12,7 +12,6 @@ $header = <<<HEADER
         CELLAIRIS&reg;
       </div>
       <nav>
-        {$_($nav)}
       </nav>
       <div id="hmbg">
         <span></span>

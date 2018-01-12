@@ -24,6 +24,8 @@ header > div:first-child span {
   font-size: 10px;
   vertical-align: top;
 }
+
+/* -- header navigation -- */
 nav {
   position: absolute;
   top: 0;
@@ -34,8 +36,9 @@ nav {
   height: 100%;
 }
 nav ul {
-  display: block;
-  margin: 0px auto;
+  list-style: none;
+  position: relative;
+  top: 25%;
 }
 nav a {
   display: block;
@@ -43,12 +46,32 @@ nav a {
   text-align: center;
   text-decoration: none;
   color: white;
+  transition: all 500ms ease-in-out;
+}
+nav a:hover {
+  color: #ff4e00;
+  text-decoration: underline;
 }
 div#hmbg {
   position: absolute;
   right: 20%;
   top: 20px;
   z-index: 2;
+}
+div#hmbg.menu-opened span {
+  background-color: transparent;
+}
+div#hmbg.menu-opened span:before,
+div#hmbg.menu-opened span:after {
+  top: 0;
+}
+div#hmbg.menu-opened span:before {
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+div#hmbg.menu-opened span:after {
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
 }
 div#hmbg span, div#hmbg span:before, div#hmbg span:after {
   cursor: pointer;
@@ -59,6 +82,7 @@ div#hmbg span, div#hmbg span:before, div#hmbg span:after {
   position: absolute;
   right:;
   content: '';
+  transition: all 500ms ease-in-out;
 }
 div#hmbg span:before {
   top: -8px;
@@ -66,6 +90,8 @@ div#hmbg span:before {
 div#hmbg span:after {
   bottom: -8px;
 }
+
+/* -- site footer -- */
 footer {
   text-align: center;
   width: 80%;
@@ -89,10 +115,21 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-  nav li {
-    margin: 
+  nav ul li {
+    font-size: 30px;
+    margin-bottom: 30px;
   }
   footer {
     font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav ul li {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  footer {
+    font-size: 12px;
   }
 }

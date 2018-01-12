@@ -28,10 +28,10 @@ function generate_html(string $elem, array $list): string {
                 $html .= "<li><a href=\"{$v}\">{$k}</a></li>";
                 break;
             case 'scripts':
-                $html .= "<script src=\"{$v}\"></script>";
+                $html .= "<script src=\"js/{$v}\"></script>";
                 break;
             case 'styles':
-                $html .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"{$v}\"/>";
+                $html .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"css/{$v}\"/>";
                 break;
         }
 

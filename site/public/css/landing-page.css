@@ -1,0 +1,39 @@
+html {
+  background: url(../img/background.png) no-repeat;
+  background-size: cover;
+}
+main, footer {
+  color: white;
+}
+main div > * {
+  margin-bottom: 25px;
+}
+main p:first-child {
+  font-weight: bold;
+}
+main p:nth-child(2) {
+  line-height: 1.75;
+}
+main a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    background-position: -200px;
+  }
+  main {
+    position: absolute;
+    bottom: 75px;
+    width: 80%;
+  }
+  main p:first-child {
+    font-size: 30px;
+  }
+  main p:nth-child(2) {
+    font-size: 11px;
+  }
+}

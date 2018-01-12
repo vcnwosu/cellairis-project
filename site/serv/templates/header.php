@@ -17,10 +17,10 @@ $header = <<<HEADER
   </head>
   <body>
     <header>
-      <div>
+      <div class="thm-orng-wht">
         CELLAIRIS<span>&reg;</span>
       </div>
-      <nav>
+      <nav class="">
         {$__html('nav', $nav)}
       </nav>
       <div id="hmbg">

@@ -4,6 +4,8 @@ namespace com\vnwosu\cellairis;
 
 new class extends View {
 
+    public $styles = ['landing-page.css'];
+
     public function __construct() {
         parent::__construct();
 

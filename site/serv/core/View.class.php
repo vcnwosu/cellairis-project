@@ -6,8 +6,11 @@ class View {
 
     public function __construct() {}
 
-    public static function html() {
-        echo $this->html;
+    public static function html($_) {
+        require_once TMPL . 'header.php';
+        require_once TMPL . 'footer.php';
+
+        echo "{$header}{BODY}{$footer}";
     }
 
 }

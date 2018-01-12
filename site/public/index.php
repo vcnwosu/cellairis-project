@@ -9,13 +9,16 @@ require_once dirname(__FILE__, 2) . '/serv/init.php';
 
 new class {
 
-    $routes = [
-        '/' => 'landing-page.php'
-    ];
-
     public function __construct() {
 
+        // get the request
+        $req = $_GET['request'] ?? '/';
 
+        // set up the resource (either request exists or error page)
+        $resource = Cellairis\ROUTES[$req] ?? Cellairis\ERROR404;
+
+        // access it
+        require_once $resource;
 
     }
 

@@ -2,9 +2,10 @@
 
 namespace com\vnwosu\cellairis;
 
-class Controller {
+new class {
 
     public function __construct() {
+
 
 
     }

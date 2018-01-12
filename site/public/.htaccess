@@ -7,4 +7,4 @@ RewriteRule \.(jpg|png|jpeg|bmp|gif|css|js)$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 
-RewriteRule ^(.+)$ localhost/~victor/cellairis/public/index.php?request=$1 [L,QSA]
+RewriteRule ^(.+)$ /~victor/cellairis/public/index.php?request=$1 [L,QSA]

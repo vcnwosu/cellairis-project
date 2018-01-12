@@ -9,12 +9,14 @@ class View {
 
     public $header = NULL;
     public $footer = NULL;
-    public $body = NULL;
+    public $main = NULL;
 
     public function __construct() {
-        /* site-wide values
+        /* view-specific info
          */
         $title = $this->title ?? 'Home'; // page title for different views
+        $styles = $this->styles ?? []; // styles needed for particular view
+        $scripts = $this->scripts ?? []; // scripts needed for particular view
 
         /* run/query models as needed
          */
@@ -29,7 +31,7 @@ class View {
     }
 
     public function html() {
-        echo "{$this->header}{$this->body}{$this->footer}";
+        echo "{$this->header}{$this->main}{$this->footer}";
     }
 
 }

@@ -20,7 +20,7 @@ $header = <<<HEADER
       <div class="thm-orng-wht">
         CELLAIRIS<span>&reg;</span>
       </div>
-      <nav class="">
+      <nav class="cell-hide">
         {$__html('nav', $nav)}
       </nav>
       <div id="hmbg">

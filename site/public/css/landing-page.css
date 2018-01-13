@@ -2,8 +2,11 @@ html {
   background: url(../img/background.png) no-repeat;
   background-size: cover;
 }
+main {
+  position: absolute;
+}
 main, footer {
-  color: white;
+  color: rgba(255, 255, 255, 0.75);
 }
 main div > * {
   margin-bottom: 25px;
@@ -26,7 +29,6 @@ main a {
     background-position: -200px;
   }
   main {
-    position: absolute;
     bottom: 75px;
     width: 80%;
   }
@@ -35,5 +37,18 @@ main a {
   }
   main p:nth-child(2) {
     font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 40%;
+    bottom: 15%;
+  }
+  main p:first-child {
+    font-size: 60px;
+  }
+  main p:nth-child(2) {
+    font-size: 14px;
   }
 }

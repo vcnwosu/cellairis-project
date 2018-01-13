@@ -1,5 +1,5 @@
 function toggleClass(elem, class1, class2) {
-  if(elem.className.includes(class1)) {
+  if(elem.className.indexOf(class1) > -1) {
     elem.className = elem.className.replace(class1, class2);
   } else {
     elem.className = elem.className.replace(class2, class1);

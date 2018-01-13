@@ -18,6 +18,7 @@ $header = <<<HEADER
     <script src="js/script.js" defer></script>
   </head>
   <body>
+    <div id="fixed-mobile-bg" class="tdt-hide"></div>
     <header>
       <div class="thm-orng-wht">
         CELLAIRIS<span>&reg;</span>

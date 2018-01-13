@@ -25,6 +25,9 @@ header > div:first-child span {
   font-size: 10px;
   vertical-align: top;
 }
+a {
+  outline: 0;
+}
 
 /* -- header navigation -- */
 nav {
@@ -61,14 +64,15 @@ nav a:after {
   background: #ff4e00;
   visibility: hidden;
   transform: scaleX(0);
-  transition: .25s linear;
+  transition: all 0.25s ease-in-out;
   z-index: -1;
 }
-nav a:hover {
+nav a:hover,
+nav a:focus {
   color: #ff4e00;
 }
 nav a:hover:after,
-nav a:hover:focus {
+nav a:focus:after {
   visibility: visible;
   transform: scaleX(1);
 }

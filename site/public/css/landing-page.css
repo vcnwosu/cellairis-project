@@ -20,10 +20,10 @@ main a {
   padding: 10px;
   font-size: 14px;
   font-weight: bold;
-  transition: all 500ms ease-in-out;
+  transition: all 50ms ease-in-out;
 }
 main a:hover {
-  background: #ff834c;
+  background: #cc3e00;
 }
 
 @media screen and (max-width: 767px) {

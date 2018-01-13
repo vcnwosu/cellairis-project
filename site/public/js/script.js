@@ -6,9 +6,7 @@ function toggleClass(elem, class1, class2) {
   }
 }
 
-(function() {
-  document.getElementById('hmbg').addEventListener('click', function(e) {
-    toggleClass(e.currentTarget.previousElementSibling, 'cell-hide', '');
-    toggleClass(e.currentTarget, 'menu-opened', '');
-  });
-})();
+document.getElementById('hmbg').addEventListener('click', function(e) {
+  toggleClass(e.currentTarget.previousElementSibling, 'cell-hide', '');
+  toggleClass(e.currentTarget, 'menu-opened', '');
+});

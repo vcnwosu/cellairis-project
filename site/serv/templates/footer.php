@@ -2,6 +2,7 @@
 
 namespace com\vnwosu\cellairis;
 
+// reference functions.php
 $__html = FUNC . '\generate_html';
 
 $footer = <<<FOOTER

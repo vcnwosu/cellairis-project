@@ -1,5 +1,4 @@
 html {
-  background: url(../img/background.png) no-repeat;
   background-size: cover;
 }
 main {
@@ -13,8 +12,10 @@ main div > * {
 }
 main p:first-child {
   font-weight: bold;
+  line-height: 0.85;
 }
 main p:nth-child(2) {
+  margin-top: -15px;
   line-height: 1.75;
 }
 main a {
@@ -26,14 +27,16 @@ main a {
 
 @media screen and (max-width: 767px) {
   html {
-    background-position: -200px;
+    background: url(../img/background576.jpg) no-repeat;
+    background-size: cover;
+    background-position: -180px;
   }
   main {
     bottom: 75px;
     width: 80%;
   }
   main p:first-child {
-    font-size: 30px;
+    font-size: 3em;
   }
   main p:nth-child(2) {
     font-size: 11px;
@@ -41,12 +44,16 @@ main a {
 }
 
 @media screen and (min-width: 768px) {
+  html {
+    background: url(../img/background.jpg) no-repeat;
+    background-size: cover;
+  }
   main {
     width: 40%;
-    bottom: 15%;
+    bottom: 20%;
   }
   main p:first-child {
-    font-size: 60px;
+    font-size: 5em;
   }
   main p:nth-child(2) {
     font-size: 14px;
